@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Name</title>
+    <link rel="stylesheet" href="css/FilmName.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/OptionGroup.js"></script>
+    <script src="js/ClickOptionS.js"></script>
+    <script src="js/GenerateFileName.js"></script>
+</head>
+
+<body>
+<!-- sta一级容器 -->
+<div class="primary_container">
+    <!-- 标题容器 -->
+    <div class="header_container">
+        <span>电影文件名制作</span>
+    </div>
+    <!-- sta表单容器 -->
+    <div class="form_container">
+
+        <!-- sta手动输入表单 -->
+        <div class="manually_enter_form_block">
+            <form id="manual_entry_form">
+                <!--表单控件一行组：form_control_row_group-->
+                <ul class="form_control_row_group">
+                    <!--单个手动输入表单控件组  group_of_single_form_controls-->
+                    <li>
+                        <label for="chinese_name_film">中文名：</label>
+                        <input type="text" id="chinese_name_film" name="chinese_name_film">
+                    </li>
+                    <li>
+                        <label for="english_name_film">英文名：</label>
+                        <input type="text" id="english_name_film" name="english_name_film">
+                    </li>
+                    <li>
+                        <label for="film_year">年份：</label>
+                        <input type="text" id="film_year" name="film_year">
+                    </li>
+                    <li>
+                        <label for="film_file_production_group">制作组：</label>
+                        <input type="text" id="film_file_production_group" name="film_file_production_group">
+                    </li>
+                    <li>
+                        <label for="film_imbd_id">IMDb ID：</label>
+                        <input type="text" id="film_imbd_id" name="film_imbd_id">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <!-- end手动输入表单 -->
+
+        <!-- sta选项输入表单 -->
+        <div class="option_form_block">
+            <!--sta剪辑版本表单行-->
+            <div class="form_row_group">
+                <!--表单输入区域-->
+                <div class="option_form_block">
+                    <form action="" id="film_clip_version_form">
+                        <label for="film_cut_version">剪辑版本：</label>
+                        <input type="text" id="film_cut_version" name="film_cut_version">
+                    </form>
+                </div>
+                <!--sta固定选项区域-->
+                <div class="option_area_block">
+                    <ul id="film_clip_version_option" class="form_option_content">
+                        <!--具体选项-->
+                        <!--<li>-->
+                        <!--<span>DirectorsCut</span>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+                <!--end固定选项区域-->
+            </div>
+            <!--end表单行-->
+
+
+            <!--sta分辨率表单行-->
+            <div class="form_row_group">
+                <!--表单输入区域-->
+                <div class="option_form_block">
+                    <form action="" id="film_resolution_form">
+                        <label for="film_file_resolution">分辨率：</label>
+                        <input type="text" id="film_file_resolution" name="film_file_resolution">
+                    </form>
+                </div>
+                <!--sta固定选项区域-->
+                <div class="option_area_block">
+                    <ul id="film_resolution_options" class="form_option_content">
+                        <!--具体选项-->
+                        <!--<li>-->
+                        <!--<span>240p</span>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+                <!--end固定选项区域-->
+            </div>
+            <!--end表单行-->
+
+
+            <!--sta分辨率格式表单行-->
+            <div class="form_row_group">
+                <!--表单输入区域-->
+                <div class="option_form_block">
+                    <form action="" id="film_resolution_format_form">
+                        <label for="film_resolution_format">分辨率格式：</label>
+                        <input type="text" id="film_resolution_format" name="film_resolution_format">
+                    </form>
+                </div>
+                <!--sta固定选项区域-->
+                <div class="option_area_block">
+                    <ul id="film_resolution_format_options" class="form_option_content">
+                        <!--具体选项-->
+                        <!--<li>
+                            <span>QVGA</span>
+                        </li>-->
+                    </ul>
+                </div>
+                <!--end固定选项区域-->
+            </div>
+            <!--end表单行-->
+
+
+            <!--sta来源表单行-->
+            <div class="form_row_group">
+                <!--表单输入区域-->
+                <div class="option_form_block">
+                    <form action="" id="film_source_form">
+                        <label for="film_file_source">来源：</label>
+                        <input type="text" id="film_file_source" name="film_file_source">
+                    </form>
+                </div>
+                <!--sta固定选项区域-->
+                <div class="option_area_block">
+                    <ul id="film_source_option" class="form_option_content">
+                        <!--具体选项-->
+                        <!--<li>
+                            <span>WEB-DL</span>
+                        </li>-->
+                    </ul>
+                </div>
+                <!--end固定选项区域-->
+            </div>
+            <!--end表单行-->
+
+
+            <!--sta视频编码表单行-->
+            <div class="form_row_group">
+                <!--表单输入区域-->
+                <div class="option_form_block">
+                    <form action="" id="film_video_coding_form">
+                        <label for="film_file_video_coding">视频编码：</label>
+                        <input type="text" id="film_file_video_coding" name="film_file_video_coding">
+                    </form>
+                </div>
+                <!--sta固定选项区域-->
+                <div class="option_area_block">
+                    <ul id="film_video_coding_options" class="form_option_content">
+                        <!--具体选项-->
+                        <!--<li>
+                            <span>H-264</span>
+                        </li>-->
+                    </ul>
+                </div>
+                <!--end固定选项区域-->
+            </div>
+            <!--end表单行-->
+
+
+            <!--sta音频编码表单行-->
+            <div class="form_row_group">
+                <!--表单输入区域-->
+                <div class="option_form_block">
+                    <form action="" id="film_audio_coding_form">
+                        <label for="film_file_audio_track">音频编码：</label>
+                        <input type="text" id="film_file_audio_track" name="film_file_audio_track">
+                    </form>
+                </div>
+                <!--sta固定选项区域-->
+                <div class="option_area_block">
+                    <ul id="film_audio_coding_options" class="form_option_content">
+                        <!--具体选项-->
+                        <!--<li>
+                            <span>DD</span>
+                        </li>-->
+                    </ul>
+                </div>
+                <!--end固定选项区域-->
+            </div>
+            <!--end表单行-->
+        </div>
+
+    </div>
+    <!--end表单容器-->
+
+    <!--sta操作和结果容器-->
+    <div class="operation_result_container">
+        <!--        结果生成区域-->
+        <div class="result_part_container">
+            <div class="result_partial_block">
+                <span id="result_partial_block"></span>
+
+            </div>
+        </div>
+        <!--        按钮盒子-->
+        <div class="result_section_button_container">
+            <ul class="push_button_carrier_box">
+                <li>
+                    <button id="movie_name_generation_and_copy">生成并复制</button>
+                </li>
+                <li>
+                    <button id="movie_name_generation">生成</button>
+                </li>
+                <li>
+                    <button id="movie_name_copy">复制</button>
+                </li>
+                <li>
+                    <button id="movie_name_generation_form_empty">清空</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end操作和结果容器-->
+</div>
+<!-- end一级容器 -->
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clickable Copyable Tags</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="text" id="input_string" placeholder="Enter a string">
+<div id="tag_container"></div>
+
+<script>
+    $(document).ready(function () {
+        // 监听输入框变化事件
+        $('#input_string').on('input', function () {
+            // 清空标签容器
+            $('#tag_container').empty();
+            // 获取输入框中的字符串
+            var inputStr = $(this).val();
+            // 通过正则表达式匹配符合要求的子字符串，并创建标签
+            var regex = /[\w-]+/g;
+            var matches = inputStr.match(regex);
+            if (matches !== null) {
+                $.each(matches, function (index, match) {
+                    var tag = $('<span class="clickable">' + match + '</span>');
+                    tag.on('click', function () {
+                        // 创建一个虚拟的textarea元素，设置内容并选中
+                        var $tempTextarea = $('<textarea>').val(match).appendTo('body').select();
+                        // 执行浏览器自带的复制操作
+                        document.execCommand('copy');
+                        // 移除虚拟的textarea元素
+                        $tempTextarea.remove();
+                    });
+                    $('#tag_container').append(tag);
+                    // 添加空格
+                    if (index !== matches.length - 1) {
+                        $('#tag_container').append(' ');
+                    }
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

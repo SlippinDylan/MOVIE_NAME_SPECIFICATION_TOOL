@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/* 电影、电视剧、字幕整体区域 */
+.informationblock {
+    background-color: #F1F3F5;
+    width: 98%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* 标题名称 */
+.platename {
+    /* background-color: green; */
+    width: 98%;
+    height: 30px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+/* 表单整体区域 */
+.formblock {
+    /* background-color: blue; */
+    width: 98%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+/* li标签 */
+li {
+    display: inline-flex;
+    margin-bottom: 12px;
+}
+
+/* label标签 */
+label {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* input标签 */
+input {
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid #DBDCDD;
+    border-radius: 6px;
+    text-indent: 10px;
+}
+
+/* 输出区域 */
+.outputplate {
+    /* background-color: blue; */
+    width: 98%;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* 输出内容 */
+.outputresult {
+    width: 65%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+/* 文件名称 */
+.movietitle {
+    /* background-color: aqua; */
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: right;
+    display: inline-block;
+    float: left;
+}
+
+/* 电影名结果 */
+.movietitleresult {
+    background-color: white;
+    width: 700px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    float: left;
+    border: 1px solid #DBDCDD;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+/* 按钮区域 */
+.operationpanel {
+    /* background-color: blueviolet; */
+    width: 35%;
+    display: inline-block;
+    float: left;
+    height: 40px;
+}
+
+/* 按钮 */
+.operationpanel button {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    background-color: #1E6FEF;
+    border: 0px solid;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}

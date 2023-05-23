@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie_name</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/movie.js"></script>
+</head>
+
+<body>
+    <!-- 电影 电视剧等种类 -->
+    <div class="category">
+        <p class="title">
+            电影名制作
+        </p>
+        <form name="generate_movie_title" id="generatemovietitle">
+            <ul>
+                <li class="enter">
+                    <label for="chineseName">中文名：</label>
+                    <input type="text" id="chineseName" name="chineseName">
+                </li>
+                <li class="enter">
+                    <label for="englishName">英文名：</label>
+                    <input type="text" id="englishName" name="englishName">
+                </li>
+                <li class="enter">
+                    <label for="year">年份：</label>
+                    <input type="text" id="year" name="year">
+                </li>
+                <li class="enter">
+                    <label for="cutVersion">剪辑版本：</label>
+                    <input type="text" id="cutVersion" name="cutVersion">
+                </li>
+                <li class="enter">
+                    <label for="resolution">分辨率：</label>
+                    <input type="text" id="resolution" name="resolution">
+                </li>
+                <li class="enter">
+                    <label for="resolutionFormat">分辨率格式：</label>
+                    <input type="text" id="resolutionFormat" name="resolutionFormat">
+                </li>
+                <li class="enter">
+                    <label for="source">来源：</label>
+                    <input type="text" id="source" name="source">
+                </li>
+                <li class="enter">
+                    <label for="videoEncoding">视频编码：</label>
+                    <input type="text" id="videoEncoding" name="videoEncoding">
+                </li>
+                <li class="enter">
+                    <label for="audioEncoding">音频编码：</label>
+                    <input type="text" id="audioEncoding" name="audioEncoding">
+                </li>
+                <li class="enter">
+                    <label for="imdbID">imdb：</label>
+                    <input type="text" id="imdbID" name="imdbID">
+                </li>
+                <li class="enter">
+                    <label for=productionTeam">制作组：</label>
+                    <input type="text" id="productionTeam" name="productionTeam">
+                </li>
+            </ul>
+        </form>
+        <br>
+    </div>
+    <div class="result">
+        <p class="resultbox" id="result">
+        </p>
+    </div>
+    <div class="btnbox">
+        <div class="btninbox">
+            <button id="outpuButton" type="button">生&nbsp;&nbsp;&nbsp;成</button>
+            <button id="cleanButton" type="button">清&nbsp;&nbsp;&nbsp;空</button>
+            <button id="copyButton" type="button">复&nbsp;&nbsp;&nbsp;制</button>
+        </div>
+    </div>
+
+    <div class="category">
+        <p class="title">
+            电视剧名制作
+        </p>
+    </div>
+</body>
+
+</html>

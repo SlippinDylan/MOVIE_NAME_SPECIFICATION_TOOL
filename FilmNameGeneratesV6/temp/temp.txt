@@ -1,0 +1,56 @@
+<li><label for="file_chinese_name">文件中文名</label><input type="text" name="file_chinese_name" id="file_chinese_name"></li>
+<li><label for="file_english_name">文件英文名</label><input type="text" name="file_english_name" id="file_english_name"></li>
+<li><label for="file_year">文件年份</label><input type="text" name="file_year" id="file_year"></li>
+<li><label for="file_clip_version">文件剪辑版本</label><input type="text" name="file_clip_version" id="file_clip_version"></li>
+<li><label for="file_resolution">文件分辨率</label><input type="text" name="file_resolution" id="file_resolution"></li>
+<li><label for="file_resolution_format">文件分辨率格式</label><input type="text" name="file_resolution_format" id="file_resolution_format"></li>
+<li><label for="file_source">文件来源</label><input type="text" name="file_source" id="file_source"></li>
+<li><label for="file_video_coding">文件视频编码</label><input type="text" name="file_video_coding" id="file_video_coding"></li>
+<li><label for="file_audio_coding">文件音频编码</label><input type="text" name="file_audio_coding" id="file_audio_coding"></li>
+<li><label for="file_making_group">文件制作组</label><input type="text" name="file_making_group" id="file_making_group"></li>
+<li><label for="file_imdb_id">文件IMDb ID</label><input type="text" name="file_imdb_id" id="file_imdb_id"></li>
+<li><label for="file_season">文件季数</label><input type="text" name="file_season" id="file_season"></li>
+<li><label for="file_sets_number">文件集数</label><input type="text" name="file_sets_number" id="file_sets_number"></li>
+<li><label for="file_set_name">文件集名</label><input type="text" name="file_set_name" id="file_set_name"></li>
+<li><label for="file_captioning_language">文件字幕语言</label><input type="text" name="file_captioning_language" id="file_captioning_language"></li>
+
+file_chinese_name
+file_english_name
+file_year
+file_clip_version
+file_resolution
+file_resolution_format
+file_source
+file_video_coding
+file_audio_coding
+file_making_group
+file_imdb_id
+file_season
+file_sets_number
+file_set_name
+file_captioning_language
+
+
+<input type="text" name="file_chinese_name" id="file_chinese_name"></li>
+<input type="text" name="file_english_name" id="file_english_name"></li>
+<input type="text" name="file_year" id="file_year"></li>
+<input type="text" name="file_clip_version" id="file_clip_version"></li>
+<input type="text" name="file_resolution" id="file_resolution"></li>
+<input type="text" name="file_resolution_format" id="file_resolution_format"></li>
+<input type="text" name="file_source" id="file_source"></li>
+<input type="text" name="file_video_coding" id="file_video_coding"></li>
+<input type="text" name="file_audio_coding" id="file_audio_coding"></li>
+<input type="text" name="file_making_group" id="file_making_group"></li>
+<input type="text" name="file_imdb_id" id="file_imdb_id"></li>
+<input type="text" name="file_season" id="file_season"></li>
+<input type="text" name="file_sets_number" id="file_sets_number"></li>
+<input type="text" name="file_set_name" id="file_set_name"></li>
+<input type="text" name="file_captioning_language" id="file_captioning_language"></li>
+
+
+
+
+DirectorsCut
+Unrated
+LIMITED
+Extended

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+/* 输入板块 */
+.inputBlock{
+    width: 98%;
+    margin: 20px auto auto 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 2px rgb(0 0 0 / 22%);
+}
+/* 板块名 */
+.plateName{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* 电影信息表单块 */
+.movieinformationSheet{
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    box-sizing:border-box;
+
+}
+/* 一行表单 */
+.formLine{
+    width: 100%;
+    height: 30px;
+    list-style:none;
+    margin-top: 12px;
+    box-sizing:border-box;
+}
+/* 单个输入框组成的表单组 */
+.formGroup{
+    width: 20%;
+    height: 30px;
+    display: inline-flex;
+    float: left;
+    list-style:none;
+}
+/* 表单组名称 */
+label{
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: right;
+}
+/* 表单组内容 */
+input{
+    width: 60%;
+    height: 30px;
+    font-size: 14px;
+    text-indent:10px;
+    border: 1px solid #DFE1E5;
+    border-radius: 2px;
+}
+
+/* 快捷输入区域 */
+.quickinputPlate{
+    width: 98%;
+    margin: 20px auto auto 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 22%);
+    padding-top: 12px;
+}
+/* 快捷输入的行 */
+.fastinputGroup{
+    width: 100%;
+    display: inline-flex;
+}
+/* 快捷输入组名称 */
+.quicklyenterthegroupName{
+    width: 8%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 2%;
+    vertical-align: middle;
+    display: inline-flexbox;
+    float: left;
+}
+/* 快捷输入选项盒 */
+.shortcutOption{
+    width: 90%;
+    display: inline-flexbox;
+    float: left;
+}
+.shortcutOption ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+/* 快捷输入选项 */
+.shortcutOption li{
+    width: 9%;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 1%;
+    margin-bottom: 12px;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #C98B31;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #FEFBE8;
+    color: #C98B31;
+}
+.shortcutOption li:hover{
+    background-color: #C98B31;
+    color: #ffffff;
+    cursor:pointer;
+}
+/* 输出操作区域 */
+.resultPlate{
+    width: 98%;
+    margin: 20px auto auto 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 2px rgb(0 0 0 / 22%);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 12px 12px 12px 12px;
+    box-sizing: border-box;
+}
+/* 输出的内容 */
+.resultContent{
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #DFE1E5;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+/* 操作按钮区域 */
+.operationbuttonArea{
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    vertical-align:middle;
+    box-sizing: border-box;
+}
+/* 所有的操作按钮 */
+button{
+    width: 15%;
+    height: 36px;
+    margin-right: 2%;
+    background-color: #2151D1;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+}
+button:hover{
+    cursor:pointer;
+}

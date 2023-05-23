@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影名转换</title>
+    <link rel="stylesheet" href="css/HomePage.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--文件名拆解-->
+    <script src="js/FileNameSplitting.js"></script>
+    <!--源文件名拆分填充input-->
+    <script src="js/SourceFileNameSplitFill.js"></script>
+    <!--按钮操作-->
+    <script src="js/WebPageOperation.js"></script>
+    <!--结果生成-->
+    <script src="js/FilenameGeneration.js"></script>
+</head>
+<body>
+<!--sta功能模块-->
+<div class="function_module">
+
+    <!--sta功能模块标题-->
+    <div class="function_module_title">
+        <span>电影文 件名转换</span>
+    </div>
+    <!--end功能模块标题-->
+
+    <!--sta自动解析块一-->
+    <div class="automatic_parsing_block">
+
+        <!--sta解析输入块-->
+        <div class="parsed_input_block">
+            <!--文件名输出-->
+            <!--文件名输入内容  filename_input_content-->
+
+            <input type="text" id="filename_input_content" placeholder="请输入源文件名">
+        </div>
+        <!--end解析输入块-->
+
+        <!--sta解析输出块-->
+        <div class="analytic_output_block">
+            <!-- sta解析输出结果盒-->
+            <!-- 文件名解析拆分结果 file_name_resolution_split_result-->
+            <div class="parse_the_output_box" id="file_name_resolution_split_result">
+                <!--<span>蔚钰宸</span>-->
+            </div>
+            <!-- end解析输出结果盒-->
+        </div>
+        <!--end解析输入块-->
+    </div>
+    <!--end自动解析块一-->
+
+
+    <!--sta表单信息块-->
+    <div class="form_information_block">
+        <!--表单信息表单块-->
+        <form action="" class="form_information_form_block" id="form_information_form_block">
+            <ul>
+                <li>
+                    <label for="file_chinese_name">中文名</label>
+                    <input type="text" name="file_chinese_name" id="file_chinese_name">
+                </li>
+                <li>
+                    <label for="file_english_name">英文名</label>
+                    <input type="text" name="file_english_name" id="file_english_name">
+                </li>
+                <li>
+                    <label for="file_season">季数</label>
+                    <input type="text" name="file_season" id="file_season">
+                </li>
+                <li>
+                    <label for="file_sets_number">集数</label>
+                    <input type="text" name="file_sets_number" id="file_sets_number">
+                </li>
+                <li>
+                    <label for="file_set_name">集名</label>
+                    <input type="text" name="file_set_name" id="file_set_name">
+                </li>
+                <li>
+                    <label for="file_year">年份</label>
+                    <input type="text" name="file_year" id="file_year">
+                </li>
+                <li>
+                    <label for="file_clip_version">剪辑版本</label>
+                    <input type="text" name="file_clip_version" id="file_clip_version">
+                </li>
+                <li>
+                    <label for="file_resolution">分辨率</label>
+                    <input type="text" name="file_resolution" id="file_resolution">
+                </li>
+                <li>
+                    <label for="file_resolution_format">分辨率格式</label>
+                    <input type="text" name="file_resolution_format" id="file_resolution_format">
+                </li>
+                <li>
+                    <label for="file_source">来源</label>
+                    <input type="text" name="file_source" id="file_source">
+                </li>
+                <li>
+                    <label for="file_video_coding">视频编码</label>
+                    <input type="text" name="file_video_coding" id="file_video_coding">
+                </li>
+                <li>
+                    <label for="file_track">音轨</label>
+                    <input type="text" name="file_track" id="file_track">
+                </li>
+                <li>
+                    <label for="file_audio_coding">音频编码</label>
+                    <input type="text" name="file_audio_coding" id="file_audio_coding">
+                </li>
+                <li>
+                    <label for="file_captioning_language">字幕语言</label>
+                    <input type="text" name="file_captioning_language" id="file_captioning_language">
+                </li>
+                <li>
+                    <label for="file_making_group">制作组</label>
+                    <input type="text" name="file_making_group" id="file_making_group">
+                </li>
+                <li>
+                    <label for="file_imdb_id">IMDb ID</label>
+                    <input type="text" name="file_imdb_id" id="file_imdb_id">
+                </li>
+            </ul>
+        </form>
+
+    </div>
+    <!--end表单信息块-->
+
+    <!--sta结果输出操作块-->
+    <div class="result_output_action_block">
+        <!--sta结果输出操作盒-->
+        <div class="result_output_operation_box">
+            <!--sta结果输出区域-->
+            <div class="result_output_area">
+                <!--文件名组合生成结果:file_name_combinations_generate_results-->
+                <input disabled="disabled" type="text" name="" id="file_name_combinations_generate_results">
+            </div>
+            <!--end结果输出区域-->
+
+            <!--sta按钮操作区域-->
+            <div class="button_operation_area">
+                <button class="copy_action_button">复&nbsp;&nbsp;&nbsp;制</button>
+                <button class="clear_operation_button">清&nbsp;&nbsp;&nbsp;空</button>
+            </div>
+            <!--end按钮操作区域-->
+        </div>
+    </div>
+    <!--end输出操作块-->
+</div>
+<!--end功能模块-->
+
+<!--快捷输入块-->
+<div class="shortcut_block">
+    <ul>
+        <!--剪辑版本-->
+        <li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>剪辑版本</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_input_clip_version">
+                    <li>240p</li>
+                    <li>360p</li>
+                    <li>480p</li>
+                    <li>576p</li>
+                    <li>720p</li>
+                    <li>1024p</li>
+                    <li>1050p</li>
+                    <li>1080p</li>
+                    <li>1200p</li>
+                    <li>1600p</li>
+                    <li>2160p</li>
+                    <li>2400p</li>
+                </ul>
+            </div>
+        </li>
+        <!--分辨率-->
+        <li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>分辨率</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_entry_resolution">
+                    <li>240p</li>
+                    <li>360p</li>
+                    <li>480p</li>
+                    <li>576p</li>
+                    <li>720p</li>
+                    <li>1024p</li>
+                    <li>1050p</li>
+                    <li>1080p</li>
+                    <li>1200p</li>
+                    <li>1600p</li>
+                    <li>2160p</li>
+                    <li>2400p</li>
+                </ul>
+            </div>
+        </li>
+        <!--分辨率格式-->
+        <li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>分辨率格式</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_entry_resolution_format">
+                    <li>240p</li>
+                    <li>360p</li>
+                    <li>480p</li>
+                    <li>576p</li>
+                    <li>720p</li>
+                    <li>1024p</li>
+                    <li>1050p</li>
+                    <li>1080p</li>
+                    <li>1200p</li>
+                    <li>1600p</li>
+                    <li>2160p</li>
+                    <li>2400p</li>
+                </ul>
+            </div>
+        </li>
+        <!--来源-->
+        <li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>来源</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_entry_source">
+                    <li>240p</li>
+                    <li>360p</li>
+                    <li>480p</li>
+                    <li>576p</li>
+                    <li>720p</li>
+                    <li>1024p</li>
+                    <li>1050p</li>
+                    <li>1080p</li>
+                    <li>1200p</li>
+                    <li>1600p</li>
+                    <li>2160p</li>
+                    <li>2400p</li>
+                </ul>
+            </div>
+        </li>
+        <!--视频编码-->
+        <li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>视频编码</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_entry_video_encoding">
+                    <li>240p</li>
+                    <li>360p</li>
+                    <li>480p</li>
+                    <li>576p</li>
+                    <li>720p</li>
+                    <li>1024p</li>
+                    <li>1050p</li>
+                    <li>1080p</li>
+                    <li>1200p</li>
+                    <li>1600p</li>
+                    <li>2160p</li>
+                    <li>2400p</li>
+                </ul>
+            </div>
+        </li>
+        <!--音轨-->
+        <li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>音轨</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_entry_track">
+                    <li>240p</li>
+                    <li>360p</li>
+                    <li>480p</li>
+                    <li>576p</li>
+                    <li>720p</li>
+                    <li>1024p</li>
+                    <li>1050p</li>
+                    <li>1080p</li>
+                    <li>1200p</li>
+                    <li>1600p</li>
+                    <li>2160p</li>
+                    <li>2400p</li>
+                </ul>
+            </div>
+        </li>
+        <!--音频编码-->
+        <li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>音频编码</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_entry_audio_encoding">
+                    <li>240p</li>
+                    <li>360p</li>
+                    <li>480p</li>
+                    <li>576p</li>
+                    <li>720p</li>
+                    <li>1024p</li>
+                    <li>1050p</li>
+                    <li>1080p</li>
+                    <li>1200p</li>
+                    <li>1600p</li>
+                    <li>2160p</li>
+                    <li>2400p</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

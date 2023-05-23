@@ -1,0 +1,95 @@
+根据下方的html代码，使用jquery，写一下代码，要求如下:
+当ID为"filename_input_content"或ID为"form_information_form_block"表单下的input的值发生变化时，遍历ID为"file_name_resolution_split_result"下的所有input输入框，
+若ID为"file_season"或"file_sets_number"的input输入框有值，则将ID为"file_chinese_name.file_english_name.file_season.file_sets_number.file_set_name.file_audio_coding.file_making_group.[file_imdb_id]"中输入框中有值的内容按照这样的顺序输出。
+
+若ID为"file_season"或"file_sets_number"有值，且"file_captioning_language"也有值，则将ID为"file_chinese_name.file_english_name.file_season.file_sets_number.file_set_name.file_audio_coding.[file_captioning_language].file_making_group.[file_imdb_id]"中输入框中有值的内容按照这样的顺序输出。
+
+若ID为"file_season"、"file_sets_number"和"file_captioning_language"都没有值的时候，则将ID为"file_chinese_name.file_english_name.file_audio_coding.file_making_group.[file_imdb_id]"中输入框中有值的内容按照这样的顺序输出。
+
+若ID为"file_season"、"file_sets_number"没有值，但是"file_captioning_language"有值的时候，则将ID为"file_chinese_name.file_english_name.[file_captioning_language].file_audio_coding..file_making_group.[file_imdb_id]"中输入框中有值的内容按照这样的顺序输出。
+最有输出的内容若最后一个字符是"."则需要删除最后的"."。
+最终，将输出结果填充ID为"file_name_combinations_generate_results"的input标签中。
+
+根据下方的html代码，使用jquery，写一下代码，要求如下:
+当ID为"filename_input_content"或ID为"form_information_form_block"表单下的input的值发生变化时，遍历ID为"file_name_resolution_split_result"下的所有input输入框，
+1.若ID为"file_season"或"file_sets_number"的input输入框有值，将ID为"file_name_resolution_split_result"下有值的input输入框按照"file_chinese_name.file_english_name.file_season.file_sets_number.file_set_name.file_audio_coding.file_making_group.[file_imdb_id]"的顺序组合输出，值为空的自动却掉，同时去掉对应后面的"."。
+2.若ID为"file_season"或"file_sets_number"有值，且"file_captioning_language"也有值，将ID为"file_name_resolution_split_result"下有值的input输入框按照"file_chinese_name.file_english_name.file_season.file_sets_number.file_set_name.file_audio_coding.[file_captioning_language].file_making_group.[file_imdb_id]"的顺序组合输出，值为空的自动却掉，同时去掉对应后面的"."。
+3.若ID为"file_season"、"file_sets_number"和"file_captioning_language"都没有值的时候，将ID为"file_name_resolution_split_result"下有值的input输入框按照"file_chinese_name.file_english_name.file_audio_coding.file_making_group.[file_imdb_id]"的顺序组合输出，值为空的自动却掉，同时去掉对应后面的"."。
+4.若ID为"file_season"、"file_sets_number"没有值，但是"file_captioning_language"有值的时候，遍历ID为"file_name_resolution_split_result"下的所有input输入框将有值的内容按照"file_chinese_name.file_english_name.[file_captioning_language].file_audio_coding..file_making_group.[file_imdb_id]"的顺序组合输出，值为空的自动却掉，同时去掉对应后面的"."。
+5.最有输出的内容若最后一个字符是"."则需要删除最后的"."。
+6.最终，将输出结果填充ID为"file_name_combinations_generate_results"的input标签中。
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影名转换</title>
+</head>
+<body>
+<div class="function_module">
+    <div class="automatic_parsing_block">
+
+        <div class="parsed_input_block">
+            <input type="text" id="filename_input_content" placeholder="请输入源文件名">
+        </div>
+        <div class="analytic_output_block">
+            <div class="parse_the_output_box" id="file_name_resolution_split_result">
+            </div>
+        </div>
+    </div>
+    <div class="form_information_block">
+        <form action="" class="form_information_form_block" id="form_information_form_block">
+            <ul>
+                <li>
+                    <label for="file_chinese_name">中文名</label>
+                    <input type="text" name="file_chinese_name" id="file_chinese_name">
+                </li>
+                <li>
+                    <label for="file_english_name">英文名</label>
+                    <input type="text" name="file_english_name" id="file_english_name">
+                </li>
+                <li>
+                    <label for="file_season">季数</label>
+                    <input type="text" name="file_season" id="file_season">
+                </li>
+                <li>
+                    <label for="file_sets_number">集数</label>
+                    <input type="text" name="file_sets_number" id="file_sets_number">
+                </li>
+                <li>
+                    <label for="file_set_name">集名</label>
+                    <input type="text" name="file_set_name" id="file_set_name">
+                </li>
+                <li>
+                    <label for="file_audio_coding">音频编码</label>
+                    <input type="text" name="file_audio_coding" id="file_audio_coding">
+                </li>
+                <li>
+                    <label for="file_captioning_language">字幕语言</label>
+                    <input type="text" name="file_captioning_language" id="file_captioning_language">
+                </li>
+                <li>
+                    <label for="file_making_group">制作组</label>
+                    <input type="text" name="file_making_group" id="file_making_group">
+                </li>
+                <li>
+                    <label for="file_imdb_id">IMDb ID</label>
+                    <input type="text" name="file_imdb_id" id="file_imdb_id">
+                </li>
+            </ul>
+        </form>
+
+    </div>
+    <div class="result_output_action_block">
+        <div class="result_output_operation_box">
+            <div class="result_output_area">
+                <input disabled="disabled" type="text" name="" id="file_name_combinations_generate_results">
+            </div>
+
+            <div class="button_operation_area">
+                <button class="copy_action_button">复&nbsp;&nbsp;&nbsp;制</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
