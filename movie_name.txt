@@ -1,0 +1,119 @@
+<!--
+ * @Author: error: git config user.name && git config user.email & please set dead value or install git
+ * @Date: 2022-08-19 13:05:12
+ * @LastEditors: SoulGoodman reallycreate@outlook.com
+ * @LastEditTime: 2022-11-21 21:04:14
+ * @FilePath: /🧱004作业/000个人配置/device/FilmName.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
+
+独行月球.Moon.Man.2022.WEB-DL.2160p.H265.AAC-Xiaomi.tt14557302
+
+
+
+/*电视剧*/
+中文.英文.季数.集数.集名.年份.剪辑版本.分辨率.来源.视频编码.音频编码.[imdb].[制作组]
+
+/*电影*/
+中文.英文.年份.剪辑版本.来源.分辨率.视频编码.音频编码.制作组.[imdb]
+
+
+
+/*剪辑版本*/
+[DirectorsCut]——Director’s Cut导演剪辑版
+[Unrated]——未分级版
+[LIMITED]——电影只在有限的电影院放映
+[Extended]——加长版类似于导演剪辑版
+
+/*分辨率*/
+
+UHD4K
+<16:9>
+[HD1080] 1920×1080
+[HD720] 1280×720
+[WVGA] 854×480
+
+<16:10>
+[WQXGA] 2560×1600
+[WUXGA] 1920×1200
+[WSXGA+] 1680×1050
+[CGA] 320×200
+
+<4:3>
+[QXGA] 2048×1536
+[UXGA] 1600×1200
+[SXGA+] 1400×1050
+[NONE] 1280×960
+[XGA] 1024×768
+[SVGA] 800×600
+[PAL] 768×576
+[VGA] 640×480
+[QVGA] 320×240
+
+<5:4>
+[SXGA] 1280×1024
+
+/*来源*/
+[CAM]（枪版）——电影院偷录
+[TS]（枪版）——电影院偷录但声音为单独耳机接口
+
+[DVD]——来源DVD，DVD原碟、DVDR以及DVDRip的来源都应选择“DVD”
+[DVDSCR]——预览版的或者是测试版的DVD，非正式出版的版本
+[DVDRIP]——是从最终版的DVD转制，质量最好，后缀为avi
+
+[TV]——来源为TV，PDTV/SDTV/IPTV/DSR流及重编码的来源应选择“TV”。
+
+[WEB-DL]/[WEBRip]——网络媒体WEB-DL版本，接近BLURAY蓝光版
+
+[REMUX]——无损版，无损的提取HD-DVD、BluRay-DVD视频、音频数据，封装到TS或AVI文件中
+
+[HDTV]——来源为HDTV。HDTV流媒体（ts/tp等）以及各种来源于HDTV的重编码（HDTVRip）的来源都应选择“HDTV”。常见于综艺资源。
+[HR-HDTV]——是用DivX/XviD/x264等MPEG4压缩技术对HDTV的视频图像进行高质量压缩后将视频、音频部分封装成一个.avi或.mkv文件，后加上外挂字幕
+[HDRIP]——HD-DVD Rip，即HD-DVD高清转制
+
+[Blu-ray]——蓝光光碟
+[BRRip]/[BDRIP]——[Blue-ray Disc Rip]蓝光高清转制
+[HDDVD]——类似于“Blu-ray”。
+[Criterion Collection BluRay]——收藏级蓝光碟
+
+[Other]——其它来源
+
+/*视频编码*/
+[X264]——[H.264]大多数电影的编码方法
+[X265]——[x264][H.265][HEVC]的升级版，同等画质优先选择x265，体积会更小
+[HEVC]——High Efficiency Video Coding，用来替代[H.264]/[AVC]编码标准
+[IMAX]——Image Maximum最大影像
+
+/*音轨*/
+[Dolby Digital(DD)] - 在DVD上被称为AC3格式，支持5.1声道环绕音效
+[Dolby Digital Plus(DD+)] - Dolby Digital格式的增强版，支持更高的比特率和7.1声道环绕音效
+[Dolby TrueHD] - MLP无损压缩技术的增强版，支持多达8个声道的无损编码音频
+[Dolby Atmos] - 杜比全景声，它突破了传统意义上5.1、7.1声道的概念，能够结合影片内容，呈现出动态的声音效果
+[DTS Digital Surround] – 目前在DVD上使用的格式，支持5.1声道环绕音效
+[DTS-HD] - DTS的增强版，提供了更高的比特率和多达8个声道的音频
+[DTS:X] - DTS:X技术是开放式的新一代的编解码标准，同时也是基于对象的多维空间音频技术（以下简称MDA）
+
+
+/*制作组*/
+<Scene> —— 0Day片源
+[AMIABLE]   [SPARKS]   [DIMENSION]
+
+<iNT> —— 收藏建议iNT组
+<Top顶级>
+[CtrlHD]   [Esir]   [DON]   [Ebp]
+<Top很好>
+[WiKi]   [EuReKa]   [CHD]   [BeAst]   [HiDT]
+<Top其他>
+[MySilu]   [HDS]   [HDChina]
+<china>
+[CHDTV]   [NGB]
+
+
+
+风骚律师.第一季.Better.Callaul.Season.1.2015
+风骚律师.第二季.Better.Callaul.Season.2.2016
+风骚律师.第三季.Better.Callaul.Season.3.2017
+风骚律师.第四季.Better.Callaul.Season.4.2018
+风骚律师.第五季.Better.Callaul.Season.5.2020
+风骚律师.第六季.Better.Callaul.Season.6.2022
