@@ -11,6 +11,8 @@
     <script src="js/SourceFileNameSplitFill.js"></script>
     <!--按钮操作-->
     <script src="js/WebPageOperation.js"></script>
+    <!--填充选项-->
+    <script src="js/ShortcutEntry.js"></script>
     <!--结果生成-->
     <script src="js/FilenameGeneration.js"></script>
 </head>
@@ -104,7 +106,7 @@
                     <input type="text" name="file_track" id="file_track">
                 </li>
                 <li>
-                    <label for="file_audio_coding">音频编码</label>
+                    <label for="file_audio_coding">音频格式</label>
                     <input type="text" name="file_audio_coding" id="file_audio_coding">
                 </li>
                 <li>
@@ -151,6 +153,18 @@
 <!--快捷输入块-->
 <div class="shortcut_block">
     <ul>
+        <!--年份-->
+        <!--<li class="shortcut_input_cell_block">
+            <div class="enter_cell_block_name_quickly">
+                <span>剪辑版本</span>
+            </div>
+            <div class="shortcut_cell_options">
+                <ul id="shortcut_input_file_year">
+                    &lt;!&ndash;<li>240p</li>&ndash;&gt;
+                </ul>
+            </div>
+        </li>-->
+
         <!--剪辑版本-->
         <li class="shortcut_input_cell_block">
             <div class="enter_cell_block_name_quickly">
@@ -158,18 +172,7 @@
             </div>
             <div class="shortcut_cell_options">
                 <ul id="shortcut_input_clip_version">
-                    <li>240p</li>
-                    <li>360p</li>
-                    <li>480p</li>
-                    <li>576p</li>
-                    <li>720p</li>
-                    <li>1024p</li>
-                    <li>1050p</li>
-                    <li>1080p</li>
-                    <li>1200p</li>
-                    <li>1600p</li>
-                    <li>2160p</li>
-                    <li>2400p</li>
+                    <!--<li>240p</li>-->
                 </ul>
             </div>
         </li>
@@ -180,18 +183,7 @@
             </div>
             <div class="shortcut_cell_options">
                 <ul id="shortcut_entry_resolution">
-                    <li>240p</li>
-                    <li>360p</li>
-                    <li>480p</li>
-                    <li>576p</li>
-                    <li>720p</li>
-                    <li>1024p</li>
-                    <li>1050p</li>
-                    <li>1080p</li>
-                    <li>1200p</li>
-                    <li>1600p</li>
-                    <li>2160p</li>
-                    <li>2400p</li>
+                    <!--<li>240p</li>-->
                 </ul>
             </div>
         </li>
@@ -202,18 +194,7 @@
             </div>
             <div class="shortcut_cell_options">
                 <ul id="shortcut_entry_resolution_format">
-                    <li>240p</li>
-                    <li>360p</li>
-                    <li>480p</li>
-                    <li>576p</li>
-                    <li>720p</li>
-                    <li>1024p</li>
-                    <li>1050p</li>
-                    <li>1080p</li>
-                    <li>1200p</li>
-                    <li>1600p</li>
-                    <li>2160p</li>
-                    <li>2400p</li>
+                    <!--<li>240p</li>-->
                 </ul>
             </div>
         </li>
@@ -224,18 +205,7 @@
             </div>
             <div class="shortcut_cell_options">
                 <ul id="shortcut_entry_source">
-                    <li>240p</li>
-                    <li>360p</li>
-                    <li>480p</li>
-                    <li>576p</li>
-                    <li>720p</li>
-                    <li>1024p</li>
-                    <li>1050p</li>
-                    <li>1080p</li>
-                    <li>1200p</li>
-                    <li>1600p</li>
-                    <li>2160p</li>
-                    <li>2400p</li>
+                    <!--<li>240p</li>-->
                 </ul>
             </div>
         </li>
@@ -246,18 +216,7 @@
             </div>
             <div class="shortcut_cell_options">
                 <ul id="shortcut_entry_video_encoding">
-                    <li>240p</li>
-                    <li>360p</li>
-                    <li>480p</li>
-                    <li>576p</li>
-                    <li>720p</li>
-                    <li>1024p</li>
-                    <li>1050p</li>
-                    <li>1080p</li>
-                    <li>1200p</li>
-                    <li>1600p</li>
-                    <li>2160p</li>
-                    <li>2400p</li>
+                    <!--<li>240p</li>-->
                 </ul>
             </div>
         </li>
@@ -268,40 +227,18 @@
             </div>
             <div class="shortcut_cell_options">
                 <ul id="shortcut_entry_track">
-                    <li>240p</li>
-                    <li>360p</li>
-                    <li>480p</li>
-                    <li>576p</li>
-                    <li>720p</li>
-                    <li>1024p</li>
-                    <li>1050p</li>
-                    <li>1080p</li>
-                    <li>1200p</li>
-                    <li>1600p</li>
-                    <li>2160p</li>
-                    <li>2400p</li>
+                    <!--<li>240p</li>-->
                 </ul>
             </div>
         </li>
-        <!--音频编码-->
+        <!--音频格式-->
         <li class="shortcut_input_cell_block">
             <div class="enter_cell_block_name_quickly">
-                <span>音频编码</span>
+                <span>音频格式</span>
             </div>
             <div class="shortcut_cell_options">
                 <ul id="shortcut_entry_audio_encoding">
-                    <li>240p</li>
-                    <li>360p</li>
-                    <li>480p</li>
-                    <li>576p</li>
-                    <li>720p</li>
-                    <li>1024p</li>
-                    <li>1050p</li>
-                    <li>1080p</li>
-                    <li>1200p</li>
-                    <li>1600p</li>
-                    <li>2160p</li>
-                    <li>2400p</li>
+                    <!--<li>240p</li>-->
                 </ul>
             </div>
         </li>
