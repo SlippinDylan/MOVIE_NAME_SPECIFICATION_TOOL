@@ -59,6 +59,3 @@ $(document).ready(function () {
     });
 
 });
-
-//
-// 使用jquery写一段代码，点击ID为copy_action_button的button按钮，复制ID为file_name_combinations_generate_results的input输入框中的值到剪切板上
