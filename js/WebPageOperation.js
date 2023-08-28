@@ -12,6 +12,29 @@ $(document).ready(function () {
     });
 
 
+    // 点击copy_action_button按钮
+    $("#copy_action_button").on('click', function() {
+        // 获取file_name_combinations_generate_results输入框的值
+        let fileName = $("#result_output_area input").val();
+
+        // 创建一个临时textarea元素
+        let tempTextarea = $("<textarea>");
+        $("body").append(tempTextarea);
+
+        // 将文件名值设置为临时textarea的值
+        tempTextarea.val(fileName).select();
+
+        // 执行复制操作
+        document.execCommand('copy');
+
+        // 移除临时textarea元素
+        tempTextarea.remove();
+
+        // 提示复制成功
+        alert("文件名已复制到剪贴板");
+    });
+
+
     /*全局清空按钮*/
     $(".clear_operation_button").on("click", function() {
         $("#filename_input_content").val("");
@@ -27,6 +50,7 @@ $(document).ready(function () {
         $("#file_resolution_format").val("");
         $("#file_source").val("");
         $("#file_video_coding").val("");
+        $("#file_track").val("");
         $("#file_audio_coding").val("");
         $("#file_captioning_language").val("");
         $("#file_making_group").val("");
@@ -36,3 +60,5 @@ $(document).ready(function () {
 
 });
 
+//
+// 使用jquery写一段代码，点击ID为copy_action_button的button按钮，复制ID为file_name_combinations_generate_results的input输入框中的值到剪切板上
